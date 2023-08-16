@@ -5,15 +5,13 @@ const config = {
 		"../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
 	],
 	refs: {
-		react: {
-			title: "React",
-			url: "https://64dc8351623e3a642cdd9b84-qfrpzeixoa.chromatic.com",
-		},
-	},
-	refs: {
 		vue: {
 			title: "Vue",
 			url: "https://64dc812a8d1c331facc2ed4f-qzekdnijrv.chromatic.com",
+		},
+		react: {
+			title: "React",
+			url: "https://64dc8351623e3a642cdd9b84-qfrpzeixoa.chromatic.com",
 		},
 	},
 	addons: [
