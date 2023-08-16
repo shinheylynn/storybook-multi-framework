@@ -1,0 +1,35 @@
+pipelines:
+  branches:
+    main:
+      - step:
+          name: Build
+          deployment: Production
+          image: node:18
+          script:
+            - npm install
+            - npm run build-storybook
+          artifacts:
+            - storybook-static/**
+      - step:
+          name: Deploy to S3
+          image: atlassian/pipelines-awscli
+          script:
+            - aws s3 sync --delete ./storybook-static s3://ui.integrationcorp.co.kr
+            - aws cloudfront create-invalidation --distribution-id E2J4QL6EK16P4D --paths "/*"
+  tags:
+    production-*:
+      - step:
+          name: Build
+          deployment: Production
+          image: node:18
+          script:
+            - npm install
+            - npm run build-storybook
+          artifacts:
+            - storybook-static/**
+      - step:
+          name: Deploy to S3
+          image: atlassian/pipelines-awscli
+          script:
+            - aws s3 sync --delete ./storybook-static s3://ui.integrationcorp.co.kr
+            - aws cloudfront create-invalidation --distribution-id E2J4QL6EK16P4D --paths "/*"
