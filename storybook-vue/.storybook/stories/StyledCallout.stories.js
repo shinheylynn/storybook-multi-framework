@@ -1,5 +1,6 @@
 import { automateStoriesFromProps, disableArgs } from '../../../src/utils';
 import StyledCallout from '../../../src/components/styled-callout/medistream.vue';
+import 'inticons/fonts/inticons.bundle.min.css';
 
 const componentName = StyledCallout.__docgenInfo.displayName;
 const initialTemplate = `<${componentName} v-bind="args"/>`;

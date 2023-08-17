@@ -5,12 +5,11 @@ import { automateStoriesFromProps } from '../../../src/utils/automateStorybook.j
 const { Playground, flag } = automateStoriesFromProps(StyledSwitch);
 
 const ownArgTypes = {
-  // flag: {
-  //     control: {
-  //         type: 'radio',
-  //     },
-  //     options: [true, false]
-  // }
+  flag: {
+    control: {
+      type: 'boolean',
+    },
+  },
 };
 
 Playground.args = {
