@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyledSwitch } from '../../src/components/styled-switch/medistream';
-import { automateStoriesFromProps } from '../utils/automateStorybook';
+import { StyledSwitch } from '../../../src/components/styled-switch/medistream.jsx';
+import { automateStoriesFromProps } from '../../../src/utils/automateStorybook.jsx';
 
 const { Playground, flag } = automateStoriesFromProps(StyledSwitch);
 

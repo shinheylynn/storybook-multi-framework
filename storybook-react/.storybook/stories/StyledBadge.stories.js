@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyledBadge } from '../../src/components/styled-badge/medistream';
-import { automateStoriesFromProps } from '../utils/automateStorybook';
+import { StyledBadge } from '../../../src/components/styled-badge/medistream.jsx';
+import { automateStoriesFromProps } from '../../../src/utils/automateStorybook.jsx';
 
 const { Playground, color, size, shape, rounded } = automateStoriesFromProps(StyledBadge);
 

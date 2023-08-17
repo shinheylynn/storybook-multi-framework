@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyledTab } from '../../src/components/styled-tab/medistream';
-import { automateStoriesFromProps } from '../utils/automateStorybook';
+import { StyledTab } from '../../../src/components/styled-tab/medistream.jsx';
+import { automateStoriesFromProps } from '../../../src/utils/automateStorybook.jsx';
 
 const { Playground, items, size, shape, color, block, animation } = automateStoriesFromProps(StyledTab);
 

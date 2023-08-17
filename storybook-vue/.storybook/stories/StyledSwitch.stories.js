@@ -1,9 +1,9 @@
-import { automateStoriesFromProps, disableArgs } from '../utils'
-import StyledSwitch from '../../src/components/styled-switch/medistream.vue'
+import { automateStoriesFromProps, disableArgs } from '../../../src/utils';
+import StyledSwitch from '../../../src/components/styled-switch/medistream.vue';
 
-const componentName = StyledSwitch.__docgenInfo.displayName
-const initialTemplate = `<${componentName} v-bind="args"/>`
-const { Playground, flag } = automateStoriesFromProps(StyledSwitch, initialTemplate)
+const componentName = StyledSwitch.__docgenInfo.displayName;
+const initialTemplate = `<${componentName} v-bind="args"/>`;
+const { Playground, flag } = automateStoriesFromProps(StyledSwitch, initialTemplate);
 
 const ownArgTypes = {
   // flag: {
@@ -12,21 +12,21 @@ const ownArgTypes = {
   //     },
   //     options: [true, false]
   // }
-}
+};
 Playground.args = {
-  flag: true
-}
+  flag: true,
+};
 
 flag.args = {
-  flag: true
-}
+  flag: true,
+};
 
-disableArgs([flag], StyledSwitch)
+disableArgs([flag], StyledSwitch);
 
-export { Playground, flag }
+export { Playground, flag };
 
 export default {
   title: 'Controls/StyledSwitch',
   component: StyledSwitch,
-  argTypes: { ...ownArgTypes }
-}
+  argTypes: { ...ownArgTypes },
+};
