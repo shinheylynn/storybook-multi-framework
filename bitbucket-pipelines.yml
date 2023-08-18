@@ -7,16 +7,10 @@ pipelines:
           image: node:18
           script:
             - npm install
-            - npm run build-storybook
-          artifacts:
-            - storybook-static/**
-      - step:
-          name: Deploy to chromatic
-          deployment: Production
-          image: node:18
-          script:
             - npm run deploy:react
             - npm run deploy:vue
+            - npm run build-storybook
+
           artifacts:
             - storybook-static/**
       - step:
@@ -33,15 +27,9 @@ pipelines:
           image: node:18
           script:
             - npm install
-            - npm run build-storybook
-          artifacts:
-            - storybook-static/**
-      - step:
-          name: Deploy to chromatic
-          image: node:18
-          script:
             - npm run deploy:react
             - npm run deploy:vue
+            - npm run build-storybook
           artifacts:
             - storybook-static/**
       - step:
