@@ -107,7 +107,7 @@ WidthHeight.argTypes = {
 export { Playground, value, Val, WidthHeight };
 
 export default {
-  title: 'Controls/StyledRadio',
+  title: 'Moreden/StyledRadio',
   component: StyledRadio,
   argTypes: { ...ownArgTypes },
 };

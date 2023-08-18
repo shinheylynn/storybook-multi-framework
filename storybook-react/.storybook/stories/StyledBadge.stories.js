@@ -43,7 +43,7 @@ const ownArgTypes = {
 export { Playground, color, size, shape, rounded };
 
 export default {
-  title: 'Controls/StyledBadge',
+  title: 'Moreden/StyledBadge',
   component: StyledBadge,
   argTypes: { ...ownArgTypes },
 };

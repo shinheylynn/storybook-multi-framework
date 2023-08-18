@@ -23,7 +23,7 @@ flag.args = {
 export { Playground, flag };
 
 export default {
-  title: 'Controls/StyledSwitch',
+  title: 'Moreden/StyledSwitch',
   component: StyledSwitch,
   argTypes: { ...ownArgTypes },
 };

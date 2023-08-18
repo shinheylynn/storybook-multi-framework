@@ -25,7 +25,7 @@ const preview = {
       storySort: {
         order: [
           'Welcome',
-          'Controls',
+          'Moreden',
           [
             'StyledButton',
             'StyledCheckbox',

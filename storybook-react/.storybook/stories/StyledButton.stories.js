@@ -120,7 +120,7 @@ const ownArgTypes = {
 export { Playground, size, width, color, outlined, disabled, loading };
 
 export default {
-  title: 'Controls/StyledButton',
+  title: 'Moreden/StyledButton',
   component: StyledButton,
   argTypes: { ...ownArgTypes },
 };

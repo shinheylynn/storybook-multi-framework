@@ -76,7 +76,7 @@ animation.args = {
 export { Playground, items, size, shape, color, block, animation };
 
 export default {
-  title: 'Controls/StyledTab',
+  title: 'Moreden/StyledTab',
   component: StyledTab,
   argTypes: { ...ownArgTypes },
 };
