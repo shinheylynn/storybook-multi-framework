@@ -133,7 +133,7 @@ disableArgs([Name, Label, Options, PlaceHolder, Disabled, IsRequired, MaxHeight,
 export { Playground, Label, Options, PlaceHolder, Disabled, IsRequired, MaxHeight, ForceDesktopStyle };
 
 export default {
-  title: 'Controls/StyledSelect',
+  title: 'Medistream/StyledSelect',
   component: StyledSelect,
   argTypes: { ...ownArgTypes },
 };

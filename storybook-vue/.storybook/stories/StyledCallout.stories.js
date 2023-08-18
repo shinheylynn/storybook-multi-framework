@@ -63,7 +63,7 @@ disableArgs([Title, Content, Color, Dismissable, Outlined], StyledCallout);
 export { Playground, Title, Content, Color, Dismissable, Outlined };
 
 export default {
-  title: 'Controls/StyledCallout',
+  title: 'Medistream/StyledCallout',
   component: StyledCallout,
   argTypes: { ...ownArgTypes },
 };

@@ -46,7 +46,7 @@ disableArgs([color, size, shape, rounded], StyledBadge);
 export { Playground, color, size, shape, rounded };
 
 export default {
-  title: 'Controls/StyledBadge',
+  title: 'Medistream/StyledBadge',
   component: StyledBadge,
   argTypes: { ...ownArgTypes },
 };

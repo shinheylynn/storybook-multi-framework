@@ -68,7 +68,7 @@ disableArgs([value, Disabled, WidthHeight], StyledCheckbox);
 export { Playground, value, Disabled, WidthHeight };
 
 export default {
-  title: 'Controls/StyledCheckbox',
+  title: 'Medistream/StyledCheckbox',
   component: StyledCheckbox,
   argTypes: { ...ownArgTypes },
 };

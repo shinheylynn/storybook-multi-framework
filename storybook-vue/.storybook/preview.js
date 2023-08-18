@@ -8,14 +8,14 @@ const preview = {
         { name: 'Primary', value: '#ffffff' },
         { name: 'Background', value: '#fffcf9' },
         { name: 'Light', value: '#fafafa' },
-        { name: 'Dark', value: '#161a31' }
-      ]
+        { name: 'Dark', value: '#161a31' },
+      ],
     },
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/
-      }
+        date: /Date$/,
+      },
     },
     options: {
       // 스토리 정렬 순서만 정의 가능
@@ -23,7 +23,7 @@ const preview = {
       storySort: {
         order: [
           'Welcome',
-          'Controls',
+          'Medistream',
           [
             'StyledButton',
             'StyledCheckbox',
@@ -38,7 +38,7 @@ const preview = {
             'PaginationBar',
             'TooltipMessage',
             'TooltipHover',
-            'ToggleSwitch'
+            'ToggleSwitch',
           ],
           'Snippets',
           [
@@ -50,7 +50,7 @@ const preview = {
             'IdentityWatermark',
             'StarGrade',
             'PdfSlide',
-            'MessageSnackbar'
+            'MessageSnackbar',
           ],
           'Archives',
           [
@@ -61,12 +61,12 @@ const preview = {
             'NumberPad',
             'BillingPlanUnit',
             'MultiSelectUnit',
-            'CouponUnit'
-          ]
-        ]
-      }
-    }
-  }
-}
+            'CouponUnit',
+          ],
+        ],
+      },
+    },
+  },
+};
 
-export default preview
+export default preview;

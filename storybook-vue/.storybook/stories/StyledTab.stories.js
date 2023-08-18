@@ -83,7 +83,7 @@ disableArgs([items, size, shape, color, block, animation], StyledTab);
 export { Playground, items, size, shape, color, block, animation };
 
 export default {
-  title: 'Controls/StyledTab',
+  title: 'Medistream/StyledTab',
   component: StyledTab,
   argTypes: { ...ownArgTypes },
 };
