@@ -38,7 +38,6 @@ pipelines:
             - storybook-static/**
       - step:
           name: Deploy to chromatic
-          deployment: Production
           image: node:18
           script:
             - npm run deploy:react
