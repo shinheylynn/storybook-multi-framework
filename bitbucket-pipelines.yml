@@ -15,7 +15,7 @@ pipelines:
           image: atlassian/pipelines-awscli
           script:
             - aws s3 sync --delete ./storybook-static s3://ui.integrationcorp.co.kr
-            - aws cloudfrgont create-invalidation --distribution-id E2J4QL6EK16P4D --paths "/*"
+            - aws cloudfront create-invalidation --distribution-id E2J4QL6EK16P4D --paths "/*"
   tags:
     production-*:
       - step:
