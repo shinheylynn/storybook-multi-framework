@@ -11,8 +11,8 @@
 		"build-storybook": "storybook build",
 		"build-storybook:react": "cd storybook-react && npm install && npm run build-storybook",
 		"build-storybook:vue": "cd storybook-vue && npm install && npm run build-storybook",
-		"deploy:react": "cd storybook-react && npm install && npm run build-storybook && npx chromatic --project-token=${REACT_STORYBOOK_TOKEN}",
-		"deploy:vue": "cd storybook-vue && npm install && npm run build-storybook && npx chromatic --project-token=${VUE_STORYBOOK_TOKEN}"
+		"deploy:react": "cd storybook-react && npm install && npm run build-storybook && npx chromatic --project-token=chpt_c97e81c6b828c20",
+		"deploy:vue": "cd storybook-vue && npm install && npm run build-storybook && npx chromatic --project-token=chpt_bfa8ad8e2e147b5"
 	},
 	"keywords": [],
 	"author": "",
