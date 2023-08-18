@@ -49,7 +49,7 @@ Playground.args = {
   Val: 'different value',
   Width: 40,
   Height: 40,
-  disabled: false,
+  Disabled: false,
 };
 
 value.args = {
@@ -109,5 +109,11 @@ export { Playground, value, Val, WidthHeight };
 export default {
   title: 'Moreden/StyledRadio',
   component: StyledRadio,
-  argTypes: { ...ownArgTypes },
+  argTypes: {
+    ...ownArgTypes,
+    Disabled: {
+      control: 'boolean',
+      name: 'Disabled',
+    },
+  },
 };
