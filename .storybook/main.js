@@ -11,7 +11,7 @@ const config = {
 		},
 		react: {
 			title: "React",
-			url: "https://64dc8351623e3a642cdd9b84-ebpoceyklo.chromatic.com",
+			url: "https://64dc8351623e3a642cdd9b84-puafziibsl.chromatic.com",
 		},
 	},
 	addons: [
