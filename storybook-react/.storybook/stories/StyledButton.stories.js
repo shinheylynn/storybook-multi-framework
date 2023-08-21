@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledButton } from '../../../src/components/styled-button/medistream.jsx';
+import { StyledButton } from '../../../src/components/styled-button/moreden.jsx';
 import { automateStoriesFromProps } from '../../../src/utils/automateStorybook.jsx';
 
 const { Playground, size, width, color, outlined, disabled, loading } = automateStoriesFromProps(StyledButton);

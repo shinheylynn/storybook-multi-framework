@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../colors/medistream.variables.scss";
-import "./medistream.scss";
+import "./moreden.scss";
 import PropTypes from "prop-types";
 
 export const StyledSwitch = ({ flag }) => {

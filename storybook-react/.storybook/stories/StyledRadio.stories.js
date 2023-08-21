@@ -1,4 +1,4 @@
-import { StyledRadio } from '../../../src/components/styled-radio/medistream.jsx';
+import { StyledRadio } from '../../../src/components/styled-radio/moreden.jsx';
 import { automateStoriesFromProps } from '../../../src/utils/automateStorybook.jsx';
 
 const { Playground, value, Val, Width: WidthHeight } = automateStoriesFromProps(StyledRadio);

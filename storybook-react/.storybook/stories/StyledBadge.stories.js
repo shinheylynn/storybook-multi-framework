@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledBadge } from '../../../src/components/styled-badge/medistream.jsx';
+import { StyledBadge } from '../../../src/components/styled-badge/moreden.jsx';
 import { automateStoriesFromProps } from '../../../src/utils/automateStorybook.jsx';
 
 const { Playground, color, size, shape, rounded } = automateStoriesFromProps(StyledBadge);
