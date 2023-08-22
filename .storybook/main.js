@@ -7,11 +7,11 @@ const config = {
 	refs: {
 		vue: {
 			title: "Vue",
-			url: "https://64dc812a8d1c331facc2ed4f-eccesdahqk.chromatic.com",
+			url: "https://test--64dc812a8d1c331facc2ed4f.chromatic.com/",
 		},
 		react: {
 			title: "React",
-			url: "https://64dc8351623e3a642cdd9b84-puafziibsl.chromatic.com",
+			url: "https://test--64dc8351623e3a642cdd9b84.chromatic.com/",
 		},
 	},
 	addons: [
