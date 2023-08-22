@@ -77,44 +77,6 @@ const ownArgTypes = {
     },
     options: ['button', 'submit', 'reset'],
   },
-  // 사용하지 않을 Prop의 경우 아래와 같이 설정해줍니다.
-  // View에 영향을 끼치지 않거나 변경하지 않을 Prop을 control과 table에서 사용하지 않도록 해줍니다.
-  to: {
-    table: {
-      disable: true,
-    },
-    control: false,
-  },
-  HeightUnit: {
-    table: {
-      disable: true,
-    },
-    control: false,
-  },
-  PaddingUnit: {
-    table: {
-      disable: true,
-    },
-    control: false,
-  },
-  FontSizeUnit: {
-    table: {
-      disable: true,
-    },
-    control: false,
-  },
-  FontWeightUnit: {
-    table: {
-      disable: true,
-    },
-    control: false,
-  },
-  BorderRadiusUnit: {
-    table: {
-      disable: true,
-    },
-    control: false,
-  },
 };
 
 export { Playground, size, width, color, outlined, disabled, loading };
