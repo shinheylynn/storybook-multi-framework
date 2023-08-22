@@ -23,6 +23,7 @@ export const StyledInput = (props) => {
 				<div className="input-wrapper">
 					<label htmlFor={Name} className={Disabled ? "disabled" : ""}>
 						{Label}
+						<em> *</em>
 					</label>
 					<div className="input-container">
 						<input
@@ -42,10 +43,28 @@ export const StyledInput = (props) => {
 							id={Name}
 							placeholder={Placeholder}
 							disabled={Disabled}
-							className={`${props.inputClasses} ${
-								TextAlign === "right" ? "text-align-right" : ""
-							}`}
 						></input>
+						<span className="input-extention">
+							<span className="state-icon with-label"></span>
+							<span className="state-icon with-label"></span>
+							<span className="with-label">
+								<button
+									style={{
+										backgroundColor: "black",
+										color: "white",
+										width: 38 + "px",
+										height: 24 + "px",
+										border: "none",
+										fontSize: 12 + "px",
+										marginLeft: 5 + "px",
+										borderRadius: 3 + "px",
+									}}
+								>
+									버튼
+								</button>
+							</span>
+							{/* <div className="tooltip-wrapper"></div> */}
+						</span>
 					</div>
 				</div>
 			</div>
