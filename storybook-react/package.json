@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "inticons": "^0.7.2",
-    "react-transition-group": "^4.4.5"
+    "react-transition-group": "^4.4.5",
+    "vuelidate": "^0.7.7"
   }
 }

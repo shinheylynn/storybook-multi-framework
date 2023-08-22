@@ -7142,6 +7142,11 @@ vue@^3.0.0, vue@^3.2.0, vue@^3.2.25, vue@^3.2.47, vue@>=2, vue@3.2.47, vue@3.x:
     "@vue/server-renderer" "3.2.47"
     "@vue/shared" "3.2.47"
 
+vuelidate@^0.7.7:
+  version "0.7.7"
+  resolved "https://registry.npmjs.org/vuelidate/-/vuelidate-0.7.7.tgz"
+  integrity sha512-pT/U2lDI67wkIqI4tum7cMSIfGcAMfB+Phtqh2ttdXURwvHRBJEAQ0tVbUsW9Upg83Q5QH59bnCoXI7A9JDGnA==
+
 walker@^1.0.8:
   version "1.0.8"
   resolved "https://registry.npmjs.org/walker/-/walker-1.0.8.tgz"
