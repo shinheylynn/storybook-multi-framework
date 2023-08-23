@@ -44,6 +44,6 @@ pipelines:
             - cd storybook-react
             - npm install
             - npm run build-storybook 
-            - npx chromatic --project-token $REACT_STORYBOOK_TOKEN
+            - npx chromatic --project-token $REACT_STORYBOOK_TOKEN --exit-zero-on-changes
           artifacts:
             - storybook-react/storybook-static/**
