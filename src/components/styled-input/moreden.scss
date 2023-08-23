@@ -26,23 +26,6 @@
 		}
 	}
 
-	.no-label {
-		width: 100%;
-		padding: 15px 0 15px 0;
-		border: none;
-		background: none;
-		border-radius: 6px;
-		text-indent: 0.6rem;
-
-		&:focus {
-			padding: 15px 0 15px 0;
-		}
-	}
-
-	.with-label {
-		padding-top: 10px;
-	}
-
 	small {
 		margin-top: 12px;
 		color: var(--blue-grey-500-to-600);
@@ -86,7 +69,7 @@
 
 			&:disabled::placeholder {
 				background-color: var(--blue-grey-50-to-900);
-				color: var(--blue-grey-300-to-700);
+				color: gray;
 			}
 		}
 
@@ -111,7 +94,7 @@
 
 			&:disabled::placeholder {
 				background-color: var(--blue-grey-50-to-900);
-				color: var(--blue-grey-300-to-700);
+				color: gray;
 			}
 		}
 	}
@@ -150,7 +133,6 @@
 
 		&.disabled,
 		&.disabled label {
-			padding-right: 21px;
 			background-color: var(--blue-grey-50-to-900);
 			border-radius: 6px;
 			color: var(--blue-grey-400-to-600);
