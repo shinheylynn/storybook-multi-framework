@@ -35,7 +35,6 @@ pipelines:
           deployment: Production
           image: node:18
           script:
-            - npm install
             - cd storybook-vue
             - npm install
             - npm run build-storybook 
