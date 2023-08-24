@@ -1,6 +1,6 @@
 pipelines:
   branches:
-    test:
+    develop:
       - step:
           name: Build
           deployment: Production
@@ -8,7 +8,6 @@ pipelines:
           script:
             - npm install
             - npm run build-storybook
-
           artifacts:
             - storybook-static/**
       - step:
@@ -17,6 +16,19 @@ pipelines:
           script:
             - aws s3 sync --delete ./storybook-static s3://ui.integrationcorp.co.kr
             - aws cloudfront create-invalidation --distribution-id E2J4QL6EK16P4D --paths "/*"
+    test:
+      - step:
+          name: Build & Deploy
+          deployment: Production
+          image: node:18
+          script:
+            - npm install
+            - cd storybook-react
+            - npm install
+            - npm run build-storybook 
+            - npx chromatic --project-token $REACT_STORYBOOK_TOKEN
+          artifacts:
+            - storybook-react/storybook-static/**
   tags:
     production-*:
       - step:
@@ -34,16 +46,3 @@ pipelines:
           script:
             - aws s3 sync --delete ./storybook-static s3://ui.integrationcorp.co.kr
             - aws cloudfront create-invalidation --distribution-id E2J4QL6EK16P4D --paths "/*"
-    react-*:
-      - step:
-          name: Build & Deploy
-          deployment: Production
-          image: node:18
-          script:
-            - npm install
-            - cd storybook-react
-            - npm install
-            - npm run build-storybook 
-            - npx chromatic --project-token $REACT_STORYBOOK_TOKEN --exit-zero-on-changes
-          artifacts:
-            - storybook-react/storybook-static/**
