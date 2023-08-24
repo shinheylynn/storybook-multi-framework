@@ -36,12 +36,12 @@ pipelines:
           image: node:18
           script:
             - npm install
-            - cd storybook-react
+            - cd storybook-vue
             - npm install
             - npm run build-storybook 
-            - npx chromatic --project-token $REACT_STORYBOOK_TOKEN --exit-zero-on-changes
+            - npx chromatic --project-token $VUE_STORYBOOK_TOKEN --exit-zero-on-changes
           artifacts:
-            - storybook-react/storybook-static/**
+            - storybook-vue/storybook-static/**
   tags:
     production-*:
       - step:
