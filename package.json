@@ -7,12 +7,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"storybook": "storybook dev -p 6006",
 		"storybook:react": "cd storybook-react && npm install && npm run storybook",
-		"storybook:vue": "cd storybook-vue && npm install && npm run storybook",
-		"build-storybook": "storybook build",
-		"build-storybook:react": "cd storybook-react && npm install && npm run build-storybook",
-		"build-storybook:vue": "cd storybook-vue && npm install && npm run build-storybook",
-		"deploy:react": "cd storybook-react && npm install && npm run build-storybook && npx chromatic --project-token=chpt_c97e81c6b828c20",
-		"deploy:vue": "cd storybook-vue && npm install && npm run build-storybook && npx chromatic --project-token=chpt_bfa8ad8e2e147b5"
+		"storybook:vue": "cd storybook-vue && npm install && npm run storybook"
 	},
 	"keywords": [],
 	"author": "",
