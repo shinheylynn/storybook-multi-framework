@@ -3,7 +3,7 @@ import StyledBadge from '../../../src/components/styled-badge/medistream.vue';
 
 // 반복적인 story 생성을 추상화했습니다.
 const componentName = StyledBadge.__docgenInfo.displayName;
-const initialTemplate = `<${componentName} v-bind="args">BADGE</${componentName}>`;
+const initialTemplate = `<${componentName} v-bind="args">BADGE!</${componentName}>`;
 const { Playground, color, size, shape, rounded } = automateStoriesFromProps(StyledBadge, initialTemplate);
 
 // Prop의 기본적인 행위를 정의합니다.
