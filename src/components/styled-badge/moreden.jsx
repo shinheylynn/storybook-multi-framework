@@ -98,7 +98,7 @@ export const StyledBadge = ({
 			className="relative z-1 inline-block h-22 line-height-22 px-3 bg-transparent font-inter font-semibold text-white text-center tracking-wide align-middle"
 			style={badgeStyle}
 		>
-			{children} NEW
+			{children} TEXT
 			<span
 				className="absolute top-0 left-0 right-0 bottom-0"
 				style={bgStyle}
