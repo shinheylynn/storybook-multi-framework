@@ -1,4 +1,4 @@
-출처: hhttps://ui.integrationcorp.co.kr/
+출처: https://ui.integrationcorp.co.kr/
 
 프로젝트의 목적 및 용도: 프로젝트에 대해 간단하게 설명하는 내용을 포함합니다.
 
