@@ -26,7 +26,7 @@ disableArgs([flag], StyledSwitch);
 export { Playground, flag };
 
 export default {
-  title: 'Controls/StyledSwitch',
+  title: 'Medistream/StyledSwitch',
   component: StyledSwitch,
   argTypes: { ...ownArgTypes },
 };

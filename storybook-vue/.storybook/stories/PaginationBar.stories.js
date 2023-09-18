@@ -71,7 +71,7 @@ disableArgs([PagesCount, AllItemsCount, FirstPage, LastPage], PaginationBar);
 export { Playground, PagesCount, AllItemsCount, FirstPage, LastPage };
 
 export default {
-  title: 'Controls/PaginationBar',
+  title: 'Medistream/PaginationBar',
   component: PaginationBar,
   // router-link를 사용하기 위해 추가
   decorators: [vueRouter()],

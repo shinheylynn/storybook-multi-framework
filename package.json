@@ -10,9 +10,7 @@
 		"storybook:vue": "cd storybook-vue && npm install && npm run storybook",
 		"build-storybook": "storybook build",
 		"build-storybook:react": "cd storybook-react && npm install && npm run build-storybook",
-		"build-storybook:vue": "cd storybook-vue && npm install && npm run build-storybook",
-		"deploy:react": "cd storybook-react && npm install && npm run build-storybook && npx chromatic --project-token=${react_storybook_token}",
-		"deploy:vue": "cd storybook-vue && npm install && npm run build-storybook && npx chromatic --project-token=${vue_storybook_token}"
+		"build-storybook:vue": "cd storybook-vue && npm install && npm run build-storybook"
 	},
 	"keywords": [],
 	"author": "",
@@ -26,7 +24,8 @@
 		"@storybook/react": "^7.3.0",
 		"@storybook/react-vite": "^7.3.0",
 		"@storybook/testing-library": "^0.2.0",
-		"postcss": "^8.4.27",
+		"autoprefixer": "^10.4.15",
+		"postcss": "^8.4.28",
 		"prop-types": "^15.8.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
@@ -37,8 +36,10 @@
 		"vite": "^4.4.5"
 	},
 	"dependencies": {
+		"esbuild": "^0.17.17",
+		"inticons": "^0.7.2",
 		"react-router-dom": "^6.15.0",
 		"react-transition-group": "^4.4.5",
-		"inticons": "^0.7.2"
+		"vuelidate": "^0.7.7"
 	}
 }

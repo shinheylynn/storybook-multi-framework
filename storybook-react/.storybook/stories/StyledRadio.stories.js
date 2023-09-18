@@ -1,4 +1,4 @@
-import { StyledRadio } from '../../../src/components/styled-radio/medistream.jsx';
+import { StyledRadio } from '../../../src/components/styled-radio/moreden.jsx';
 import { automateStoriesFromProps } from '../../../src/utils/automateStorybook.jsx';
 
 const { Playground, value, Val, Width: WidthHeight } = automateStoriesFromProps(StyledRadio);
@@ -49,7 +49,7 @@ Playground.args = {
   Val: 'different value',
   Width: 40,
   Height: 40,
-  disabled: false,
+  Disabled: false,
 };
 
 value.args = {
@@ -109,5 +109,11 @@ export { Playground, value, Val, WidthHeight };
 export default {
   title: 'Moreden/StyledRadio',
   component: StyledRadio,
-  argTypes: { ...ownArgTypes },
+  argTypes: {
+    ...ownArgTypes,
+    Disabled: {
+      control: 'boolean',
+      name: 'Disabled',
+    },
+  },
 };

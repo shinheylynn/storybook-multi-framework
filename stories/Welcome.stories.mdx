@@ -1,0 +1,139 @@
+import { Meta } from "@storybook/addon-docs";
+import Code from "./assets/code-brackets.svg";
+import Colors from "./assets/colors.svg";
+import Comments from "./assets/comments.svg";
+import Direction from "./assets/direction.svg";
+import Flow from "./assets/flow.svg";
+import Plugin from "./assets/plugin.svg";
+import Repo from "./assets/repo.svg";
+import StackAlt from "./assets/stackalt.svg";
+
+<Meta title="Docs/Welcome" />
+
+<style>
+	{`
+    .subheading {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 6px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+
+    a.recruit {
+    color: #152447;
+  }
+
+  .aside {
+    font-size: 87.5%;
+    line-height: 1.43;
+    color: rgb(102, 102, 102);
+    background: rgb(248, 250, 252);
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1.5em 0px;
+  }
+
+
+  `}
+</style>
+
+# Integration UI Storybook
+
+인티그레이션 Frontend 팀에서 사용하는 공용 컴포넌트들을 참고 & 테스트하기 위한 Storybook 페이지입니다.
+
+<div class="aside">
+	💡 <strong>NOTE</strong>: <code>🐞</code> 이모티콘을 붙여 버그가 있거나 개선이
+	필요함을 나타냅니다.
+</div>
+
+<div className="subheading">rules</div>
+
+storybook을 작성할 때 아래와 같은 규칙들을 따릅니다.
+
+- **컴포넌트 생성**
+
+  1. /src/components/`컴포넌트 명`/`플랫폼 명`.`확장자`
+
+- **스토리 생성**
+
+  1. /storybook-`react or vue`/.storybook/stories/`컴포넌트 명`.stories.js 를 생성합니다.
+
+  2. /src 아래의 컴포넌트를 import합니다.
+
+  3. 기본 story를 만듭니다. ( Playground로 명명합니다. )
+
+  4. Prop을 각각 story로 만듭니다.
+
+  5. 버그가 있거나 개선이 필요한 컴포넌트 story의 경우 이름 뒤에 `Lady Beetle` 이모티콘을 붙입니다. `예시) :Color 🐞`
+
+- **추상화 함수 경로: `/src/utils/automateStorybook.확장자명`**
+
+  1. 반복되는 Story 생성을 추상화합니다.
+
+  2. View에 영향을 끼치지 않거나 변경하지 않을 Prop을 control과 table에서 사용하지 않도록 해줍니다.
+
+<div className="subheading">example</div>
+
+# StyledBadge.stories.js
+
+```js
+import React from "react";
+// 컴포넌트를 import 해옵니다.
+import { StyledBadge } from "../../../src/components/styled-badge/moreden.jsx";
+import { automateStoriesFromProps } from "../../../src/utils/automateStorybook.jsx";
+
+// 반복적인 story 생성을 추상화했습니다.
+// View에 영향을 끼치지 않거나 변경하지 않을 Prop을 control과 table에서 사용하지 않도록 해줍니다.
+const { Playground, color, size, shape, rounded } =
+	automateStoriesFromProps(StyledBadge);
+
+// 모든 Props를 Playground에서 변경, 확인해볼 수 있습니다.
+Playground.args = {
+	size: "x-large",
+	shape: "outlined",
+	rounded: false,
+};
+
+// 각 Props 마다 이해하기 좋게 기본 뷰를 임의로 정해줄 수 있습니다.
+color.args = {
+	color: "#1d77ff",
+};
+size.args = {
+	size: "x-large",
+};
+shape.args = {
+	shape: "outlined",
+};
+rounded.args = {
+	rounded: true,
+};
+
+// Prop의 기본적인 행위를 정의합니다.
+const ownArgTypes = {
+	size: {
+		control: {
+			type: "inline-radio",
+		},
+		options: ["x-small", "small", "medium", "large", "x-large"],
+	},
+	shape: {
+		control: {
+			type: "inline-radio",
+		},
+		options: ["embossed", "engraved", "outlined"],
+	},
+};
+
+export { Playground, color, size, shape, rounded };
+
+export default {
+	title: "Moreden/StyledBadge", // title은 [플랫폼명]/[컴포넌트명]으로 설정합니다.
+	component: StyledBadge,
+	argTypes: { ...ownArgTypes },
+};
+```

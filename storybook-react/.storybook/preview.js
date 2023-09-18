@@ -1,5 +1,4 @@
 /** @type { import('@storybook/vue3').Preview } */
-// import '../src/tailwind.css';
 
 const preview = {
   parameters: {
@@ -41,29 +40,6 @@ const preview = {
             'TooltipMessage',
             'TooltipHover',
             'ToggleSwitch',
-          ],
-          'Snippets',
-          [
-            'PageTitle',
-            'MessageBar',
-            'CustomModal',
-            'CustomModalFullpage',
-            'ContentPlaceholder',
-            'IdentityWatermark',
-            'StarGrade',
-            'PdfSlide',
-            'MessageSnackbar',
-          ],
-          'Archives',
-          [
-            'RadialProgress',
-            'LinearProgress',
-            'DatePicker',
-            'TextareaAutosize',
-            'NumberPad',
-            'BillingPlanUnit',
-            'MultiSelectUnit',
-            'CouponUnit',
           ],
         ],
       },

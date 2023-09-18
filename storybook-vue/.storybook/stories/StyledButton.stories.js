@@ -126,7 +126,7 @@ disableArgs([size, width, color, outlined, disabled, loading], StyledButton);
 export { Playground, size, width, color, outlined, disabled, loading };
 
 export default {
-  title: 'Controls/StyledButton',
+  title: 'Medistream/StyledButton',
   component: StyledButton,
   argTypes: { ...ownArgTypes },
 };

@@ -94,7 +94,7 @@ disableArgs([value, Val, WidthHeight], StyledRadio);
 export { Playground, value, Val, WidthHeight };
 
 export default {
-  title: 'Controls/StyledRadio',
+  title: 'Medistream/StyledRadio',
   component: StyledRadio,
   argTypes: { ...ownArgTypes },
 };
