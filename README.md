@@ -12,7 +12,7 @@
 # Projects
 *(편의상 React library를 framework로 지칭함.)*
 ### Multi-Framework 작업: 
-[`Storybook`](https://storybook.js.org/)의 **`composition`** 기능을 활용하여 **`Vue framework과 React library를 하나의 공간에서 관리`** 할 수 있도록 한다.
+[`Storybook`](https://storybook.js.org/)의 **`composition`** 기능을 활용하여 **`Vue.js framework과 React.js framework를 하나의 공간에서 관리`** 할 수 있도록 한다.
 
 2개 이상의 프레임워크를 하나의 Storybook으로 합쳐서 하나의 레포로 관리한다. 이를 통해 다수의 프레임워크로 작성된 UI들을 효율적으로 관리할 수 있도록 한다.
 
